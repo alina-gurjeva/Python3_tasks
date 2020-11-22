@@ -68,15 +68,11 @@ print('3е задание')
 
 
 def make_num(x):
-    # в условии не уточнено, какие числа, поэтому:
-    try:
-        x = int(x)
-    except ValueError:
-        x = float(x)
+    x = int(x)
     return x + int(str(x)*2) + int(str(x)*3)
 
 
-n = input('Введите число: ')
+n = input('Введите целое не отрицательное число: ')
 
 print(make_num(n))
 
